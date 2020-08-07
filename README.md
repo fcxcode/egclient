@@ -11,9 +11,12 @@ Download and Install:
 
 If you would like to interact with the console to input commands such as
 
-?go [<name>]        - Go to different arena
-?target [<name>]    - Sets your target/tick on a player
+?go \[\<name\>\]        - Go to different arena
+  
+?target \[\<name\>\]    - Sets your target/tick on a player
+  
 ?players            - Shows a list of players in the arena
+
 Or just chatting
 
 You will need to run it in a terminal by typing 'dart bin/main.dart'
