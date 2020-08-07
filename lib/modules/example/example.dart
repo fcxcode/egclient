@@ -6,7 +6,7 @@ class Example {
   final Shell _shell;
 
   Example(this._arena, this._chat, this._shell) {
-    //::Register a !say command!
+    //::Register an example module with a !say command
     _shell.register(ShellModule('example', 'ex', 'An exaple module!', [
       //  !say hello                              -> says hello in public chat
       //  !s hello                                -> says hello in public chat
