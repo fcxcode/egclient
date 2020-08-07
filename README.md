@@ -1,5 +1,10 @@
-A sample command-line application with an entrypoint in `bin/`, library code
-in `lib/`, and example unit test in `test/`.
+Instructions:
 
-Created from templates made available by Stagehand under a BSD-style
-[license](https://github.com/dart-lang/stagehand/blob/master/LICENSE).
+Download and Install:
+
+#1 Downloand and install dart-sdk https://dart.dev/get-dart
+
+#2 Visual Studio Code https://code.visualstudio.com/
+    - Install Dart plugin for VSC https://marketplace.visualstudio.com/items?itemName=Dart-Code.dart-code
+
+#3 Open project with VSC and press F5 to start debugging. 
