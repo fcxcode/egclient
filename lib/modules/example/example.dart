@@ -6,14 +6,18 @@ class Example {
   final Shell _shell;
 
   Example(this._arena, this._chat, this._shell) {
-    //::Register your commands!
-    _shell.register(ShellModule('', '', 'Hello World!', [
-      //::This cmd can only be access by private message
-      ShellCommand('say', 'say', 'Say something...',
+    //::Register a !say command!
+    _shell.register(ShellModule('example', 'ex', 'An exaple module!', [
+      //  !say hello                              -> says hello in public chat
+      //  !s hello                                -> says hello in public chat
+      //  !say what:hello to say name:Fc who      -> says hello to Fc in private chat
+      //  !s w:hello n:Fc                         -> says hello to Fc in private chat
+      ShellCommand('say', 's', 'Say something...',
           parameters: [
             ShellParameter('what', 'w', 'What to say?', isOptional: true),
             ShellParameter('name', 'n', 'Say privately!', isOptional: true),
           ],
+          //::This cmd can only be access with private message
           allowPublicMessage: false,
           allowPrivateMessage: true,
           allowUserAccessList: null)
